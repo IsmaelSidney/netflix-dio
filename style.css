@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -19,7 +20,7 @@ body{
     height: 100%;
     width: 10rem;
     margin-right: 3rem;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
     /* object-fit: fill; */
 }
 .container .logo img{
@@ -45,9 +46,15 @@ body{
     text-align: center;
     padding: .5rem;
     cursor: pointer;
+    
 }
 .container .menu .menu-left li a{
     color: #fff;
+    transition: 0.5s;
+}
+.container .menu .menu-left li:hover a{
+    color: rgb(211, 211, 211);
+    text-decoration: underline;
 }
 .container .menu .menu-right{
     display: flex;
@@ -80,4 +87,111 @@ body{
 }
 .container .menu .menu-right .user li{
     cursor: pointer;
+}
+
+main .main-movie{
+    height: 25rem;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('/assets/main-movie.jpg');
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+}
+
+main .main-movie .description{
+    height: 50%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+main .main-movie .description .type{
+    height: 4rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;  
+}
+
+main .main-movie .description .type img{
+    height: 2rem;
+    margin: 1rem;
+
+}
+main .main-movie .description .title{
+    padding-bottom: 1rem;
+    font-size: 50px;
+}
+
+main .main-movie .description .btns{
+    margin-top: 1rem ;
+}
+
+main .main-movie .description .btns button{
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+main .main-movie .description .btns button i{
+    padding-right: .5rem;
+
+}
+main .main-movie .description .btns .play{
+    background: #efefef;
+    transition: .5s;
+}
+main .main-movie .description .btns .play:hover{
+    background: #5e5e5e;
+    color: #fff;
+}
+main .main-movie .description .btns .info{
+    background: #5e5e5e;
+    color: #fff;
+    transition: .5s;
+}
+
+main .main-movie .description .btns .info:hover{
+    background: #424242;
+}
+
+.arrow-left{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;  
+    font-size: 30px;
+    opacity: .5;
+    background: #5e5e5e;
+    transition: .5s;
+}
+
+.arrow-right{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 1rem;
+    font-size: 30px;
+    opacity: .5;
+    background: #5e5e5e;
+    transition: .5s;
+}
+
+.arrow-left:hover{
+    opacity: .8;
+}  
+.arrow-right:hover{
+    opacity: .8;
 }
