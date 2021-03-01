@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: #141414;
+}
+
+.container{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+}
+.container .logo{
+    height: 100%;
+    width: 10rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    /* object-fit: fill; */
+}
+.container .logo img{
+    width: 100%;
+    height: 100%;
+
+}
+.container .menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container .menu .menu-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.container .menu .menu-left li{
+    display: inline-block;
+    text-align: center;
+    padding: .5rem;
+    cursor: pointer;
+}
+.container .menu .menu-left li a{
+    color: #fff;
+}
+.container .menu .menu-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.container .menu .menu-right li{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem;
+    cursor: pointer;
+}
+.container .menu .menu-right .user{
+    height: 100%;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.container .menu .menu-right .user img{
+    width: 70%;
+    height: 70%;
+    border-radius: 2px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.container .menu .menu-right .user li{
+    cursor: pointer;
+}
