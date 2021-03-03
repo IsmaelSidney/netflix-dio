@@ -212,7 +212,7 @@ main .main-movie .description .btns .info:hover {
 
 section .movies {
     width: 95%;
-    height: 10rem;
+    height: 200px;
     margin-left: 2rem;
     color: #fff;
     display: flex;
@@ -233,24 +233,29 @@ section .movies .carrousel {
 }
 
 section .movies .carrousel .card {
-    /* height: 8rem; */
+    height: 70%;
     width: 14rem;
-    margin: 0 .3rem 0;
+    display: flex;
+    flex-direction: column;
+    margin-right:0.5rem ;
     position: relative;
     border-radius: 5px;
     transition: .4s;
-    z-index: 2;
+    z-index: 1;
+    background:#181818;  
 }
 
-section .movies .carrousel .card:hover {
-    transform: scale(1.2);
-    transform-origin: left;
-    z-index: 10000;
+section .movies .carrousel .card:hover  {
+    transform: scale(1.5) translateY(-100px);
+    height: 230px;
+    
 }
-
+section .movies .carrousel .card:hover  .title{
+    top: 100px;
+}
 section .movies .carrousel .card .img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     border-radius: 5px;
 }
 
@@ -261,18 +266,69 @@ section .movies .carrousel .card .img img {
 }
 
 section .movies .carrousel .card .img .title {
-    position: absolute;
-    bottom: 10px;
+    /* position: absolute; */
     left: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    margin-left: 5px;
+    /* background: #181818; */
 }
 
 section .movies .carrousel .card .content {
     display: none;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+    margin-top: 10px;
+    /* background: #181818; */
+}
+section .movies .carrousel .card:hover .content{
+    display: flex;
+    transition: all .5s ease-in-out;
+}
+section .movies .carrousel .card .content .options{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+section .movies .carrousel .card .content .options div{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 2px solid #fff;
+    font-size: 15px;
+    margin: 0 5px 0 5px;
+    /* padding: auto; */
+    border-radius: 50%;
+    
+}
+section .movies .carrousel .card .content .options div:last-child{
+    position: absolute;
+    right: 0;
 }
 
+section .movies .carrousel .card .content .options a{
+    color: #fff;
+}
+section .movies .carrousel .card .content .info{
+    font-size: 12px;
+    margin: 10px 0 0 5px;
+}
+section .movies .carrousel .card .content .info .green{
+    color: green;
+}
+section .movies .carrousel .card .content .info .faixa{
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    background: rgb(226, 82, 25);
+}
 section {
     position: relative;
+    width: 100%;
+    height: 300px;
 }
 
 section div.arrow-left {
